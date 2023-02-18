@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif !important;
+}
+
+.container{
+    width: 100%;
+    height: 54.12rem;
+    background-color: white;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins' sans-serif !important;
+
+    .left-img{
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(https://cdn1.hitched.co.uk/assets/img/layer-alta/default_en-GB.jpg);
+    }
+
+}
+
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #fff;
+    width: 850px;
+  }
+  .grid-item {
+    border: 1px solid rgba(234, 234, 234, 0.8);
+    text-align: center;
+    width: 510px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .right{
+        width: 450px;
+        line-height: 2;
+        font-family: "Poppins" , sans-serif;
+    }
+    form{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2;
+        input{
+    font-family: 'Poppins', sans-serif !important;
+
+            width: 450px;
+            font-size: 16px;
+            line-height: 24px;
+            border: 0;
+            border-bottom: 1px solid #d9d9d9;
+            outline-style: none;
+            padding: 5px;
+        }
+ 
+        .f-pass{
+            text-align: end;
+             font-size: 16px;
+              text-decoration: none; 
+              color: black;
+              margin-bottom: 20px;
+              &:hover{
+                color: #775a97;
+              }
+        }
+     
+      }
+  }
+  
+  .grid-item1 {
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+   width: 340px;
+
+
+  }
+  .btn{
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #775a97;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.btn:hover{
+    background-color: #563c72;    
+}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+.d-flex{
+    display: flex;
+    gap: 20px;
+}
+
+
+#date{
+    border:0;
+    border-bottom: 1px solid #0097e6;
+    text-align: center;
+    background: none;
+    display: block;
+    margin: 10px 0px;
+    padding: 15px 0px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    color: black;
+  }
+
+  
+
+
+  .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid  #d9d9d9;
+    color: #8a8a8a;
+    min-width: 50px;
+    text-align: center;
+  }
+.i-black{
+    font-size: 16px;
+    color: black !important;
+}
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+
+
+.form-country{
+    float: right;
+    width: 100%;
+    height: 49.6px;
+    border: none;
+    border-bottom: 1px solid  #d9d9d9;
+
+}
+
+
+
+@media only screen and (max-width:865px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto !important;
+        justify-items: center;
+    }
+    .grid-item1{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto !important;
+        justify-items: center;
+    }
+    .grid-item{
+        border: none;
+    }
+}
+@media only screen and (max-width:510px){
+    .d-flex {
+        display: flex;
+        gap: 59px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .grid-item{
+        width: 100% !important;
+        padding: 20px;
+       form input {
+            width: 100% !important;
+        }
+    }
+    .grid-item .right {
+        width: 100%;
+        line-height: 2;
+    }
+    .main{
+        width: 100%;
+    }
+    .the-dropdown-block {
+        width: 100% !important;
+    }
+    .the-dropdown-select {
+        width: 100% !important;
+        padding: 0px;
+     
+    }
+    .form-country {
+        width: 100% !important;
+    }
+    #date{
+        width: 100% !important;
+    }
+    label{
+        padding: 20px 0px;
+    }
+}
